@@ -34,6 +34,16 @@ namespace Discord
         public Stream Stream { get; }
 #pragma warning restore IDISP008 
 
+        /// <summary>
+        ///    The waveform is intended to be a preview of a voice message, with 1 byte per datapoint encoded in base64
+        /// </summary>
+        public string Waveform { get; set; }
+
+        /// <summary>
+        ///     Total duration of a voice message
+        /// </summary>
+        public float? DurationSecs { get; set; }
+        
         private bool _isDisposed;
 
         /// <summary>
